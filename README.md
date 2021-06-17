@@ -17,3 +17,4 @@
 - Add Restaurant to User Blacklist: Client/User/{id}/addblacklist/{hotelid}
 - Remove Restaurant from User Blacklist: Client/User/{id}/removeblacklist/{hotelid}
 
+5. API Documentation: Swagger -> https://localhost:44380/swagger/index.html (WebAPI Default page)
