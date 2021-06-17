@@ -14,14 +14,14 @@ namespace DataPersistence.Database
     /// <typeparam name="T"></typeparam>
     public class DataMaintenance<T> : IMaintenance<T>
     {
-        const string _pathJsonFiles = "C:\\ABorjas\\eLearning\\Redlen\\DataPersistence\\Database\\";
         private readonly string _pathJsonFile;
         protected List<T> _list;
 
         public DataMaintenance(string path)
         {
-            _pathJsonFile = path;
-            var strData = File.ReadAllText(_pathJsonFiles + _pathJsonFile);
+            _pathJsonFile = Path.GetFullPath("~//Database").Replace("~\\", "");
+            _pathJsonFile = _pathJsonFile + "\\" +path;
+            var strData = File.ReadAllText(_pathJsonFile);
             _list = JsonConvert.DeserializeObject<List<T>>(strData);
         }
 
@@ -48,7 +48,7 @@ namespace DataPersistence.Database
         public void Save()
         {
             string contain = System.Text.Json.JsonSerializer.Serialize(_list);
-            File.WriteAllText(_pathJsonFiles+_pathJsonFile, contain);
+            File.WriteAllText(_pathJsonFile, contain);
         }
 
         public virtual void Update(T item)

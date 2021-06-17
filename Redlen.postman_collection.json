@@ -1,0 +1,402 @@
+{
+	"info": {
+		"_postman_id": "8366cd18-d823-4b2c-b694-512bf426de10",
+		"name": "Redlen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Maintenance",
+			"item": [
+				{
+					"name": "Restaurants-GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44380/api/restaurant",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44380",
+							"path": [
+								"api",
+								"restaurant"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurants-GetOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44380/api/restaurant/1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44380",
+							"path": [
+								"api",
+								"restaurant",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurants-Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 11,\r\n    \"name\": \"KFC\",\r\n    \"address\": \"\",\r\n    \"city\": \"Victoria, BC\",\r\n    \"country\": \"Canada\",\r\n    \"postalCode\": \"\",\r\n    \"distance\": 5,\r\n    \"isOpen\": \"11:30-22:00\",\r\n    \"active\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44380/api/restaurant/add",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44380",
+							"path": [
+								"api",
+								"restaurant",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurants-Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 11,\r\n    \"name\": \"KFC\",\r\n    \"address\": \"Douglas St\",\r\n    \"city\": \"Victoria, BC\",\r\n    \"country\": \"Canada\",\r\n    \"postalCode\": \"\",\r\n    \"distance\": 5,\r\n    \"isOpen\": \"11:30-22:00\",\r\n    \"active\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44380/api/restaurant/update",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44380",
+							"path": [
+								"api",
+								"restaurant",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurant-Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44380/api/restaurant/11",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44380",
+							"path": [
+								"api",
+								"restaurant",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Users-GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44380/api/user",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44380",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Users-GetOne",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44380/api/user/2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44380",
+							"path": [
+								"api",
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Users-Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"userName\": \"alex.borjas\",\r\n    \"fullName\": \"Alex Borjas\",\r\n    \"city\": \"Victoria, BC\",\r\n    \"country\": \"Canada\",\r\n    \"favoriteRestaurants\": \"\",\r\n    \"blackList\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44380/api/user/add",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44380",
+							"path": [
+								"api",
+								"user",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Users-Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"userName\": \"alex.borjas\",\r\n    \"fullName\": \"Alex Borjas\",\r\n    \"city\": \"Victoria, BC\",\r\n    \"country\": \"Canada\",\r\n    \"favoriteRestaurants\": \"\",\r\n    \"blackList\": \"10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44380/api/user/update",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44380",
+							"path": [
+								"api",
+								"user",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Users-Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44380/api/user/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44380",
+							"path": [
+								"api",
+								"user",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Client-User/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/Client/user/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"Client",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client-User/{id}/search",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"a\",\r\n  \"location\": \"\",\r\n  \"country\": \"\",\r\n  \"hour\": \"13:00\",\r\n  \"distance\": 15,\r\n  \"favorite\": false,\r\n  \"open\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44380/Client/user/1/search",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"Client",
+						"user",
+						"1",
+						"search"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client-User/{id}/addfavorite/{hotelid}",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/Client/user/2/addfavorite/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"Client",
+						"user",
+						"2",
+						"addfavorite",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client-User/{id}/removefavorite/{hotelid}",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/Client/user/2/removefavorite/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"Client",
+						"user",
+						"2",
+						"removefavorite",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client-User/{id}/addblacklist/{hotelid}",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/Client/user/2/addblacklist/10",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"Client",
+						"user",
+						"2",
+						"addblacklist",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Client-User/{id}/removeblacklist/{hotelid}",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44380/Client/user/2/removeblacklist/10",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44380",
+					"path": [
+						"Client",
+						"user",
+						"2",
+						"removeblacklist",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

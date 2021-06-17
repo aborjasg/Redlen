@@ -5,11 +5,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Database\restaurants.json" />
+    <Content Remove="Database\systemusers.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\DataPersistence\DataPersistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Database\restaurants.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Database\systemusers.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
