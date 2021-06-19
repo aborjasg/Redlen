@@ -51,7 +51,7 @@ namespace DataPersistence.Models
                         {
                             Blacklist.Add(_restaurants.GetOne(Convert.ToInt32(item)));
                         }
-                    }
+                    }                   
                 }
                 else
                     throw new Exception("User ID invalid!");
@@ -70,7 +70,7 @@ namespace DataPersistence.Models
 
         public RestaurantsView SearchRestaurants(int id, RestaurantFilter filter)
         {
-            RestaurantsView result = new RestaurantsView(filter);
+            RestaurantsView result = new RestaurantsView(id, filter);
 
             try
             {

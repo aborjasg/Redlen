@@ -1,0 +1,25 @@
+﻿@model DataPersistence.Models.RestaurantsView
+
+@{
+    ViewData["Title"] = "Search Restaurants";
+}
+
+<partial name="_SystemUser" model="@Model.User" view-data="ViewData" />
+
+<h4 style="color: green">Search Restaurants</h4>
+<form asp-action="Search" method="get">
+    <div style="height: 80px">
+        Name <input type="text" name="Keyword" id="Keyword" value="@ViewData["Keyword"]" maxlength="10" />
+        Location @Html.DropDownList("Location", new SelectList(Model.Locations), @ViewData["Location"])
+        Country @Html.DropDownList("Country", new SelectList(Model.Countries), @ViewData["Country"])
+        Distance <input type="text" name="Distance" id="Distance" value="@ViewData["Distance"]" maxlength="2" style="width: 80px" />
+        Current Time @Html.DropDownList("Hour", new SelectList(Model.Hours, @ViewData["Hour"]))
+        Favorites @Html.CheckBox("Favorites")
+        Open @Html.CheckBox("Open")
+        <input type="submit" value="Search" />
+    </div>
+        
+    <partial name="_RestaurantSearch" model="@Model.SearchResult" view-data="ViewData" />
+
+</form>
+

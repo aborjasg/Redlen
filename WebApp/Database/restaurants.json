@@ -1,0 +1,112 @@
+[
+  {
+    "Id": 1,
+    "Name": "Roodtop Patio",
+    "Address": "919 Douglas St",
+    "City": "Vancouver, BC",
+    "Country": "Canada",
+    "PostalCode": "V8W 2C2",
+    "Distance": 5,
+    "Schedule": "11:30-22:00",
+    "Active": 1
+  },
+  {
+    "Id": 2,
+    "Name": "Floyd\u0027s diner James Bay",
+    "Address": "332 Menzies St",
+    "City": "Victoria, BC",
+    "Country": "Canada",
+    "PostalCode": "V8V 2G9",
+    "Distance": 4,
+    "Schedule": "08:00-15:00",
+    "Active": 1
+  },
+  {
+    "Id": 3,
+    "Name": "BC Legislative Dining Room",
+    "Address": "501 Belleville St",
+    "City": "Victoria, BC",
+    "Country": "Canada",
+    "PostalCode": "V8V 2L8",
+    "Distance": 7,
+    "Schedule": "08:30-14:00",
+    "Active": 1
+  },
+  {
+    "Id": 4,
+    "Name": "Nourish Kitchen \u0026 Cafe",
+    "Address": "225 Quebec St",
+    "City": "Victoria, BC",
+    "Country": "Canada",
+    "PostalCode": "V8V 1W2",
+    "Distance": 9,
+    "Schedule": "10:00-15:00",
+    "Active": 1
+  },
+  {
+    "Id": 5,
+    "Name": "IL Covo Trattoria",
+    "Address": "106 Superior St",
+    "City": "Victoria, BC",
+    "Country": "Canada",
+    "PostalCode": "V8V 1T1",
+    "Distance": 12,
+    "Schedule": "17:00-22:00",
+    "Active": 1
+  },
+  {
+    "Id": 6,
+    "Name": "The Courtney Room",
+    "Address": "619 Courtney St",
+    "City": "Victoria, BC",
+    "Country": "Canada",
+    "PostalCode": "V8W 1B8",
+    "Distance": 15,
+    "Schedule": "07:00-22:00",
+    "Active": 1
+  },
+  {
+    "Id": 7,
+    "Name": "The Hallway",
+    "Address": "1724 Douglas St",
+    "City": "Victoria, BC",
+    "Country": "Canada",
+    "PostalCode": "V8W 2G7",
+    "Distance": 18,
+    "Schedule": "15:00-22:00",
+    "Active": 1
+  },
+  {
+    "Id": 8,
+    "Name": "Blue Crab Seafood House",
+    "Address": "146 Kingston St",
+    "City": "Victoria, BC",
+    "Country": "Canada",
+    "PostalCode": "V8V 1V4",
+    "Distance": 22,
+    "Schedule": "17:00-21:00",
+    "Active": 1
+  },
+  {
+    "Id": 9,
+    "Name": "Little Jumbo Restaurant and Bar",
+    "Address": "506 Fort St",
+    "City": "Victoria, BC",
+    "Country": "Canada",
+    "PostalCode": "V8W 1E6",
+    "Distance": 27,
+    "Schedule": "15:00-21:45",
+    "Active": 1
+  },
+  {
+    "Id": 10,
+    "Name": "Hank\u0027s A Restaurant",
+    "Address": "1001 Douglas St",
+    "City": "Victoria, BC",
+    "Country": "Canada",
+    "PostalCode": "V8W 2C5",
+    "Distance": 30,
+    "Schedule": "17:00-22:00",
+    "Active": 1
+  }
+]

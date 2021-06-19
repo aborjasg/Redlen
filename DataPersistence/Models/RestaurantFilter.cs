@@ -50,12 +50,12 @@ namespace DataPersistence.Models
         {
             bool result = false;
 
-            if (Name.Length <= 10 && Location.Length <= 10 && Country.Length <= 20 && isHour(Hour) && Distance >= 0 && Distance <= 100)
+            if (Name.Length <= 10 && Location.Length <= 50 && Country.Length <= 20 && isHour(Hour) && Distance >= 0 && Distance <= 100)
                 result = true;
             else if (Name.Length > 10)
                 throw new Exception("Keyword is too long (Max. 20 characters)");
-            else if (Location.Length > 10)
-                throw new Exception("Location is too long (Max. 20 characters)");
+            else if (Location.Length > 50)
+                throw new Exception("Location is too long (Max. 50 characters)");
             else if (Country.Length > 20)
                 throw new Exception("Country is too long (Max. 20 characters)");
             else if (!isHour(Hour))

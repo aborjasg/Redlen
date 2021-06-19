@@ -1,0 +1,77 @@
+﻿@model IEnumerable<DataPersistence.Models.Restaurant>
+
+    <h4 style="color: black">Blacklist</h4>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Address)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.City)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Country)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.PostalCode)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Distance)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Schedule)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Open)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Id)
+                    </td>
+                    <td>
+                        <b>@Html.DisplayFor(modelItem => item.Name)</b>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Address)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.City)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Country)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PostalCode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Distance)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Schedule)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Open)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Remove", "RemoveBlacklist", "Users", new { id = @ViewData["UserId"], restaurantId = item.Id })
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+    <hr />

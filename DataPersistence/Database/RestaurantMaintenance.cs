@@ -21,7 +21,9 @@ namespace DataPersistence.Database
 
         public override Restaurant GetOne(int id)
         {            
-            return _list.Find(x => x.Id == id);
+            var obj = _list.Find(x => x.Id == id);
+            obj.Open = obj.isOpen(Utils.getCurrentHour());
+            return obj;
         }
 
         public override void Add(Restaurant item)

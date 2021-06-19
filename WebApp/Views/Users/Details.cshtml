@@ -1,0 +1,14 @@
+﻿@model DataPersistence.Models.UserView
+
+@{
+    ViewData["Title"] = "User Details";
+}
+
+<div>
+    <partial name="_SystemUser" model="@Model.User" view-data="ViewData" />
+    <partial name="_RestaurantFavorites" model="@Model.Favorites" view-data="ViewData" />
+    <partial name="_RestaurantBlacklist" model="@Model.Blacklist" view-data="ViewData" />
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
