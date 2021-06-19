@@ -1,6 +1,6 @@
 # Redlen
 # Author: Alex Borjas
-# Date: Wed Jun 18, 2021
+# Date: Friday Jun 18, 2021
 
 # Content:
 1. WebApp - Users and Favorites restaurants and Blacklist
