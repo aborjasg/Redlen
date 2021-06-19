@@ -1,12 +1,13 @@
 # Redlen
 # Author: Alex Borjas
-# Date: Wed Jun 16, 2021
+# Date: Wed Jun 18, 2021
 
-# Contain:
-1. WebAPI
-2. Data Persistence: JSON files (systemusers.json, restaurants.json)
-3. Unit Tests
-4. Postman: Redlen.postman_collection.json
+# Content:
+1. WebApp - Users and Favorites restaurants and Blacklist
+2. Unit Tests
+3. WebAPI
+4. Data Persistence: JSON files (systemusers.json, restaurants.json)
+5. Postman: Redlen.postman_collection.json
 - Get all Users: Maintenance\Users-GetAll
 - Get all Restaurants: Maintenance\Restaurants-GetAll
 
